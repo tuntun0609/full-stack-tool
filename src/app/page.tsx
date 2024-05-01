@@ -1,10 +1,13 @@
 import { Header } from '@/components/header'
-import Image from 'next/image'
+import { Sidebar } from '@/components/sidebar'
 
 export default function Home() {
   return (
-    <>
-      <Header />
-    </>
+    <div>
+      <Sidebar />
+      <div className="sm:pl-[16rem]">
+        <Header />
+      </div>
+    </div>
   )
 }
