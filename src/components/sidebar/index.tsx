@@ -8,7 +8,7 @@ export const Sidebar = () => {
         className={
           'logo flex justify-center items-center h-16 text-2xl ' +
           fontLobster.className +
-          ' bg-gradient-to-r from-violet-500 to-blue-300 text-transparent bg-clip-text lobster-regular'
+          ' bg-gradient-to-r from-violet-500 to-blue-300 text-transparent bg-clip-text'
         }>
         Full Stack Tools
       </div>
