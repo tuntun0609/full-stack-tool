@@ -13,7 +13,9 @@ export const Sidebar = () => {
           )}>
           Full Stack Tools
         </div>
-        <Menu />
+        <div className="pt-8">
+          <Menu />
+        </div>
       </nav>
     </div>
   )

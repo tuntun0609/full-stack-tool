@@ -15,6 +15,16 @@ export const Menu = () => {
   }))
   const [activeId, setActiveId] = useState(menuItems[0].id)
 
+  const toActiveIdTool = (index: number) => {
+    const activeIdTool = document.getElementById(`tool-list-${index + 1}`)
+    const elePosition = activeIdTool?.getBoundingClientRect().top || 0
+    const offsetPosition = elePosition + window.pageYOffset - 75
+    window.scrollTo({
+      top: offsetPosition,
+      behavior: 'smooth',
+    })
+  }
+
   return (
     <div className="nav flex flex-col gap-2">
       {menuItems.map((item, index) => (
@@ -23,6 +33,7 @@ export const Menu = () => {
           key={index}
           onClick={() => {
             setActiveId(item.id)
+            toActiveIdTool(index)
           }}>
           <Image src={item.icon} alt={item.title} width={20} height={20} />
           <span>{item.title}</span>
