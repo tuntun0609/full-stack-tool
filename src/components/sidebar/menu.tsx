@@ -13,7 +13,7 @@ export const Menu = () => {
     title: item.title,
     id: index,
   }))
-  const [activeId, setActiveId] = useState(1)
+  const [activeId, setActiveId] = useState(menuItems[0].id)
 
   return (
     <div className="nav flex flex-col gap-2">

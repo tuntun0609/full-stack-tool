@@ -17,8 +17,8 @@ export const ActiveButton = ({
     <div
       onClick={onClick}
       className={cn(
-        'block cursor-pointer rounded-lg hover:bg-gray-100 hover:text-purple-500 h-auto p-2 ease-in-out transition-all duration-200',
-        active && 'bg-gray-100 text-purple-500'
+        'block cursor-pointer rounded-lg hover:bg-gray-100 hover:text-purple-500 dark:hover:bg-gray-300 h-auto p-2 ease-in-out transition-all duration-200 pl-6',
+        active && 'bg-gray-100 text-purple-500 dark:bg-gray-300'
       )}>
       <div className={cn('flex items-center gap-2', fontContrailOne.className)}>
         {children}

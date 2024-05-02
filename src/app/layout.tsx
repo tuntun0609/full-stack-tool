@@ -1,8 +1,7 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
 import './globals.css'
-
-const inter = Inter({ subsets: ['latin'] })
+import { ThemeProvider } from '@/components/theme/theme-provider'
+import { fontContrailOne, fontLobster } from '@/lib/fonts'
 
 export const metadata: Metadata = {
   title: 'Full Stack Tools',
@@ -16,7 +15,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={fontContrailOne.className}>
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          {children}
+        </ThemeProvider>
+      </body>
     </html>
   )
 }
