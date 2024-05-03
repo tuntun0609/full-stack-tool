@@ -20,7 +20,9 @@ export default function RootLayout({
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           {children}
         </ThemeProvider>
-        <GoogleAnalytics gaId="G-Q8KFE0CW2Q" />
+        {process.env.NODE_ENV !== 'development' && (
+          <GoogleAnalytics gaId="G-Q8KFE0CW2Q" />
+        )}
       </body>
     </html>
   )
