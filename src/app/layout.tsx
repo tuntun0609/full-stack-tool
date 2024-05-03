@@ -1,7 +1,8 @@
 import type { Metadata } from 'next'
 import './globals.css'
 import { ThemeProvider } from '@/components/theme/theme-provider'
-import { fontContrailOne, fontLobster } from '@/lib/fonts'
+import { fontContrailOne } from '@/lib/fonts'
+import { GoogleAnalytics } from '@next/third-parties/google'
 
 export const metadata: Metadata = {
   title: 'Full Stack Tools',
@@ -19,6 +20,7 @@ export default function RootLayout({
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           {children}
         </ThemeProvider>
+        <GoogleAnalytics gaId="G-Q8KFE0CW2Q" />
       </body>
     </html>
   )
