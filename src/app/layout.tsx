@@ -5,7 +5,7 @@ import { fontContrailOne } from '@/lib/fonts'
 import { GoogleAnalytics } from '@next/third-parties/google'
 
 export const metadata: Metadata = {
-  title: 'Full Stack Tools',
+  title: 'Full Stack Tool',
   description: 'List of tools for full stack developers',
 }
 

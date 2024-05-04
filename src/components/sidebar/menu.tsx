@@ -2,7 +2,7 @@
 
 import Image from 'next/image'
 
-import siteMap from '@/config/sample.json'
+import siteMap from '@/config/sample'
 
 import { ActiveButton } from './active-button'
 import { useState } from 'react'

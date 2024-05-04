@@ -11,7 +11,7 @@ export const Sidebar = () => {
             'logo flex justify-center items-center h-16 text-2xl bg-gradient-to-r from-violet-500 to-blue-300 text-transparent bg-clip-text select-none',
             fontLobster.className
           )}>
-          Full Stack Tools
+          Full Stack Tool
         </div>
         <div className="pt-8">
           <Menu />

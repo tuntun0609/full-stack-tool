@@ -1,13 +1,8 @@
-import siteMap from '@/config/sample.json'
+import siteMap, { IToolItem } from '@/config/sample'
 import Image from 'next/image'
 import Link from 'next/link'
 
-const ToolItem = (data: {
-  title: string
-  description: string
-  icon: string
-  url: string
-}) => (
+const ToolItem = (data: IToolItem) => (
   <Link href={data.url} target="_blank">
     <div className="h-full p-4 border border-gray-100 rounded-lg shadow-sm cursor-pointer transition-all hover:-translate-y-1 hover:scale-105 hover:bg-border hover:shadow-lg xl:mb-0">
       <div className="flex items-center h-10 mb-2">
