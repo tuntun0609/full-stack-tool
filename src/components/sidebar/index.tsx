@@ -5,7 +5,7 @@ import { Menu } from './menu'
 export const Sidebar = () => {
   return (
     <div className="w-[16rem] hidden min-h-screen overflow-y-auto fixed z-10 sm:block">
-      <nav className="flex flex-col sm:px-6 sm:pb-6">
+      <nav className="flex flex-col sm:px-6 sm:pb-6 h-screen">
         <div
           className={cn(
             'logo flex justify-center items-center h-16 text-2xl bg-gradient-to-r from-violet-500 to-blue-300 text-transparent bg-clip-text select-none',
@@ -13,7 +13,7 @@ export const Sidebar = () => {
           )}>
           Full Stack Tool
         </div>
-        <div className="pt-8">
+        <div className="pt-8 overflow-y-auto">
           <Menu />
         </div>
       </nav>

@@ -29,7 +29,7 @@ export const MobileMenu = () => {
         }}></div>
       <div
         className={cn(
-          'fixed inset-0 z-20 mx-0 h-screen w-60 -translate-x-60 bg-background transition-transform duration-300 ease-in-out',
+          'fixed inset-0 z-20 mx-0 h-screen w-60 -translate-x-60 bg-background transition-transform duration-300 ease-in-out flex flex-col',
           menuOpen && 'translate-x-0'
         )}>
         <div
@@ -39,7 +39,7 @@ export const MobileMenu = () => {
           )}>
           Full Stack Tool
         </div>
-        <div className="p-4 pt-8">
+        <div className="p-4 pt-8 overflow-y-auto">
           <Menu />
         </div>
       </div>
