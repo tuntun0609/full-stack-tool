@@ -21,6 +21,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <meta
+          name="google-site-verification"
+          content="oB0kdf2_VvKkELCcNraxJAPze44Gs4DFafScoBjWGPI"
+        />
+      </head>
       <body className={fontContrailOne.className}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           {children}
