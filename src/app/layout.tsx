@@ -7,6 +7,11 @@ import { GoogleAnalytics } from '@next/third-parties/google'
 export const metadata: Metadata = {
   title: 'Full Stack Tool',
   description: 'List of tools for full stack developers',
+  icons: {
+    icon: '/favicon.ico',
+    shortcut: '/favicon.ico',
+    apple: '/favicon.ico',
+  },
 }
 
 export default function RootLayout({
