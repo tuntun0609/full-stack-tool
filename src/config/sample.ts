@@ -48,6 +48,7 @@ import framerMotionIcon from '@/assets/img/framer.svg'
 import canIUseIcon from '@/assets/img/caniuse.png'
 import supabaseIcon from '@/assets/img/supabase.svg'
 import affineIcon from '@/assets/img/affine.svg'
+import DonutIcon from '@/assets/img/donut.svg'
 
 export interface IToolItem {
   title: string
@@ -145,6 +146,12 @@ const siteMap: SiteMapItem[] = [
         description:
           'an open style cross-platform and -framework solution that supports users to develop any mini-programs',
         url: 'https://github.com/nervjs/taro',
+      },
+      {
+        title: 'Donut',
+        description: 'a mini-program framework by tencent',
+        icon: DonutIcon,
+        url: 'https://dev.weixin.qq.com/',
       },
     ],
   },
