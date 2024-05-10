@@ -49,6 +49,7 @@ import canIUseIcon from '@/assets/img/caniuse.png'
 import supabaseIcon from '@/assets/img/supabase.svg'
 import affineIcon from '@/assets/img/affine.svg'
 import DonutIcon from '@/assets/img/donut.svg'
+import fontAwesomeIcon from '@/assets/img/font-awesome.png'
 
 export interface IToolItem {
   title: string
@@ -232,6 +233,13 @@ const siteMap: SiteMapItem[] = [
         icon: iconifyIcon,
         description: 'All popular icon sets, one framework',
         url: 'https://iconify.design/',
+      },
+      {
+        title: 'Font Awesome',
+        icon: fontAwesomeIcon,
+        description:
+          "Font Awesome is the Internet's icon library and toolkit, used by millions of designers, developers, and content creators.",
+        url: 'https://fontawesome.com/',
       },
       {
         title: 'Tailwind CSS Cheat Sheet',
